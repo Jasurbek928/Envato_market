@@ -1,0 +1,94 @@
+*{
+    text-decoration: none !important;
+    outline: none !important;
+}
+.w{
+    max-width: 1200px;
+}
+.text-gold{
+    color: #cc9600;
+}
+.bg-black{
+    background-color: black;
+}
+header{
+    z-index: 1;
+    height: 100vh;
+}
+.menu-bottom{
+    bottom: 0;
+}
+.menu-bottom > div,.story {
+    overflow-x: scroll;
+}
+.menu-bottom > div::-webkit-scrollbar,.story::-webkit-scrollbar{
+    display: none;
+}
+.carousel{
+    height:100vh ;
+}
+.carousel-item>img{
+    object-fit: cover;
+    height: 100vh;   
+}
+.carousel-indicators li{
+    width: 7px;
+    height: 7px;
+}
+.products a,.idea a,.blog a{
+    background-size: cover;
+    width: 365px;
+    height: 280px;
+    max-width: 365px;
+    background-position: center;
+}
+.story{
+    word-spacing: -5px;
+}
+.story a{
+    width: 436.5px;
+    height: 500px;   
+}
+.story + button{
+    top: 0;
+    right: 0;
+    height: 500px;
+    width: 100px;
+}
+.idea a {
+    height: 480px;
+}
+.our{
+    background-image: url(./img/images/gallery-4.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 520px;
+}
+.our p{
+    max-width: 760px;
+}
+.blog a{
+    height:initial;
+}
+.blog p{
+    line-height: 1.2;
+}
+.notif{
+    border-radius: 50%;
+    font-size: 10px;
+    color: white;
+}
+@media(max-width:500px){
+    .social{
+        flex-direction: column;
+        display: none !important;
+    }
+    .fa-bars{
+        display: block !important;
+    }
+}
+@media(max-width:475px){
+    .Remove-f{
+        display: none;
+    }
+}

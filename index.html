@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>online shop</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+  
+</head>
+<body>
+
+  <!-- header -->
+  <header class="position-absolute w-100 pb-0">
+    <div class="position-relative h-100">
+      <!-- nav -->
+      <nav class="d-flex justify-content-between p-2 bg-dark align-items-center">
+        <img class="" src="./img/icon/envato_market.svg" width="155" alt="">
+        <div class="d-flex align-items-center">
+          <div class="px-3">
+            <button type="button" class="btn btn-success">Buy Now</button>
+          </div>
+          <div class="border-left px-3 Remove-f">
+            <a href="#">
+              <b>&times;</b>
+              Remove Frame
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <!-- menu-1 -->
+        <nav  class="d-flex justify-content-end py-2 social">
+          <a class="px-3 text-warning" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="px-3 text-warning" href="#"><i class="fab fa-twitter"></i></a>
+          <a class="px-3 text-warning" href="#"><i class="fab fa-youtube"></i></a>
+          <a class="px-3 text-warning" href="#">USD $</a>
+          <a class="px-3 text-warning" href="#">لعربية</a>
+          <a class="px-3 text-warning" href="#"><i class="far fa-user"></i></a>
+          <a class="px-3 text-warning" href="#"><i class="fa fa-search"></i></a>
+          <a class="px-3 text-warning position-relative" href="#"><i class="fas fa-shopping-cart"><span class="badge bg-danger notif position-absolute">3</span></i></a>
+         
+        </nav>
+        <i style="font-size: 30px;" class="fas fa-bars text-warning d-none" onclick="openMenu();"></i>
+        <hr style="border-color:#ccc;opacity:0.3">
+        <!-- menu-2 -->
+        <nav class="d-flex justify-content-between ">
+          <img src="./img/images/logo.png" alt="">
+          <i class="fas fa-bars d-lg-none" onclick="openMenu();"></i>
+          <div class="d-none d-lg-block" id="menu2">
+            <ul class="list-unstyled d-flex flex-column flex-lg-row">
+              <li><a class="px-3 text-light" href="#">HOME</a></li>
+              <li><a class="px-3 text-light" href="#">PAGES <small><small><i class="fa fa-chevron-down"></i></small></small></a></li>
+              <li><a class="px-3 text-light" href="#">SHOP <small><small><i class="fa fa-chevron-down"></i></small></small></a></li>
+              <li><a class="px-3 text-light" href="#">ICONS <small><small><i class="fa fa-chevron-down"></i></small></small></a></li>
+              <li><a class="px-3 text-light" href="#">MEGAMENU <small><small><i class="fa fa-chevron-down"></i></small></small></a></li>
+              <li><a class="px-3 text-light" href="#">SHORTCODES</a></li>
+            </ul>
+          </div>
+        </nav>
+        <script>
+          function openMenu() {
+            let m = document.getElementById('menu2').style;
+            if (m.display == 'none') {
+              m.display = 'block !important';
+            } else {
+              m.display = 'none !important';
+            }
+          }
+        </script>
+        <!-- nav-title -->
+        <div class="text-light mt-4">
+          <h1 class="">Modern furniture theme</h1>
+          <p class="mb-0 mt-4">Modern & powerfull template.</p>
+          <p>Clean design & responsive layout. Google fonts integration</p>
+          <button type="button" class="btn btn-warning text-light mt-4 p-2"><i class="fas fa-shopping-cart"></i> Buy this template</button>
+        </div>
+      </div>
+      <!-- menu-bottom -->
+      <div class="menu-bottom position-absolute w-100">
+        <div class="container text-center text-nowrap py-5">
+          <a class="d-inline-block text-light px-5" href="#">
+            <img src="./img/icon/sofa.svg" alt="" width="100"><br>
+            SOFA
+          </a>
+          <a class="d-inline-block text-light px-5" href="#">
+            <img src="./img/icon/armchair.svg" alt="" width="100"><br>
+            ARMCHAIR
+          </a>
+          <a class="d-inline-block text-light px-5" href="#">
+            <img src="./img/icon/chair.svg" alt="" width="100"><br>
+            CHAIR
+          </a>
+          <a class="d-inline-block text-light px-5" href="#">
+            <img src="./img/icon/dining-table.svg" alt="" width="100"><br>
+            DINING TABLES
+          </a>
+          <a class="d-inline-block text-light px-5" href="#">
+            <img src="./img/icon/media-cabinet.svg" alt="" width="100"><br>
+            MEDIA STORAGE
+          </a>
+          <a class="d-inline-block text-light px-5" href="#">
+            <img src="./img/icon/tables.svg" alt="" width="100"><br>
+            TABLES
+          </a>
+          <a class="d-inline-block text-light px-5" href="#">
+            <img src="./img/icon/accessories.svg" alt="" width="100"><br>
+            ACCESSORIES
+          </a>
+          <a class="d-inline-block text-light px-5" href="#">
+            <img src="./img/icon/bar-set.svg" alt="" width="100"><br>
+            BAR-SET
+          </a>
+          <a class="d-inline-block text-light px-5" href="#">
+            <img src="./img/icon/bookcase.svg" alt="" width="100"><br>
+            BOOKCASE
+          </a>
+          <a class="d-inline-block text-light px-5" href="#">
+            <img src="./img/icon/carpet.svg" alt="" width="100"><br>
+            CARPET
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- carousel -->
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators m-0 justify-content-end mr-3">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active rounded-circle mx-2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1" class="rounded-circle mx-2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2" class="rounded-circle mx-2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="./img/images/gallery-1.jpg" alt="First slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="./img/images/gallery-2.jpg" alt="Second slide">
+      </div>
+      <div class="carousel-item">
+        <img class="d-block w-100" src="./img/images/gallery-3.jpg" alt="Third slide">
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-light">
+    <!-- PRODUCTS -->
+    <div class="products w m-auto text-center">
+      <h2 class="pt-4 text-dark">POPULAR PRODUCT</h2>
+      <p class="text-muted pb-2">Check out our latest collections</p>
+      <a class="d-inline-block border shadow-sm text-left m-3 p-3  " href="#" style="background-image: url(./img/images/product-1.png);">
+        <div class="d-flex justify-content-between align-items-start">
+          <div>
+            <h4 class="text-dark">GREEN CORNER</h4>
+            <small class="text-muted"><s>$ 1499,-</s> $ 1099,-</small>
+          </div>
+          <span class="badge badge-pill badge-danger p-2"><i class="far fa-heart"></i></span>
+        </div>
+      </a>
+      <a class="d-inline-block border shadow-sm text-left m-3 p-3  " href="#" style="background-image: url(./img/images/product-2.png);">
+        <div class="d-flex justify-content-between align-items-start">
+          <div>
+            <h4 class="text-dark">LAURA</h4>
+            <small class="text-muted"><s>$ 1499,-</s> $ 1099,-</small>
+          </div>
+        </div>
+      </a>
+      <a class="d-inline-block border shadow-sm text-left m-3 p-3  " href="#" style="background-image: url(./img/images/product-3.png);">
+        <div class="d-flex justify-content-between align-items-start">
+          <div>
+            <h4 class="text-dark">NUDE</h4>
+            <small class="text-muted"><s>$ 1499,-</s> $ 1099,-</small>
+          </div>
+        </div>
+      </a>
+      <a class="d-inline-block border shadow-sm text-left m-3 p-3  " href="#" style="background-image: url(./img/images/product-4.png);">
+        <div class="d-flex justify-content-between align-items-start">
+          <div>
+            <h4 class="text-dark">AURORA</h4>
+            <small class="text-muted"><s>$ 1499,-</s> $ 1099,-</small>
+          </div>
+        </div>
+      </a>
+      <a class="d-inline-block border shadow-sm text-left m-3 p-3  " href="#" style="background-image: url(./img/images/product-5.png);">
+        <div class="d-flex justify-content-between align-items-start">
+          <div>
+            <h4 class="text-dark">DINING SET</h4>
+            <small class="text-muted"><s>$ 1499,-</s> $ 1099,-</small>
+          </div>
+          <span class="badge badge-pill badge-danger p-2"><i class="far fa-heart"></i></span>
+        </div>
+      </a>
+      <a class="d-inline-block border shadow-sm text-left m-3 p-3  " href="#" style="background-image: url(./img/images/product-6.png);">
+        <div class="d-flex justify-content-between align-items-start">
+          <div>
+            <h4 class="text-dark">SEAT CHAIR</h4>
+            <small class="text-muted"><s>$ 1499,-</s> $ 1099,-</small>
+          </div>
+          <!-- <span class="badge badge-pill badge-danger p-2"><i class="far fa-heart"></i></span> -->
+        </div>
+      </a>
+    </div>
+  <div class="text-center">
+    <button type="button" class="btn btn-warning d-inline-block  text-white rounded-sm px-3 py-2 mt-5 mb-5">View story</button>
+
+  </div>    
+<!-- view story -->
+    <div class="position-relative"> 
+      <div class="story text-center text-nowrap">
+        <a class="d-inline-flex text-light px-5" href="#" style="background-image: url(./img/images/gallery-1.jpg); background-position: center; background-size: cover;">
+          <div class="m-auto">
+            <img src="./img/icon/bedroom.svg" alt="" width="100"><br>
+            Bedroom
+          </div>
+        </a>
+        <a class="d-inline-flex text-light px-5" href="#" style="background-image: url(./img/images/gallery-2.jpg);background-position: center; background-size: cover;">
+          <div class="m-auto">
+            <img src="./img/icon/sofa.svg" alt="" width="100"><br>
+            SOFA
+          </div>
+        </a>
+        <a class="d-inline-flex text-light px-5" href="#" style="background-image: url(./img/images/gallery-3.jpg);background-position: center; background-size: cover;">
+          <div class="m-auto">
+            <img src="./img/icon/sofa.svg" alt="" width="100"><br>
+            SOFA
+          </div>
+        </a>
+        <a class="d-inline-flex text-light px-5" href="#" style="background-image: url(./img/images/gallery-4.jpg);background-position: center; background-size: cover;">
+          <div class="m-auto">
+            <img src="./img/icon/office.svg" alt="" width="100"><br>
+            Office
+          </div>
+        </a>
+        <a class="d-inline-flex text-light px-5" href="#" style="background-image: url(./img/images/gallery-5.jpg);background-position: center; background-size: cover;">
+          <div class="m-auto">
+            <img src="./img/icon/sofa.svg" alt="" width="100"><br>
+            SOFA
+          </div>
+        </a>
+        <a class="d-inline-flex text-light px-5" href="#" style="background-image: url(./img/images/gallery-6.jpg);background-position: center; background-size: cover;">
+          <div class="m-auto">
+            <img src="./img/icon/sofa.svg" alt="" width="100"><br>
+            SOFA
+          </div>
+        </a>
+        <a class="d-inline-flex text-light px-5" href="#" style="background-image: url(./img/images/gallery-7.jpg);background-position: center; background-size: cover;">
+          <div class="m-auto">
+            <img src="./img/icon/sofa.svg" alt="" width="100"><br>
+            SOFA
+          </div>
+        </a>
+        <a class="d-inline-flex text-light px-5" href="#" style="background-image: url(./img/images/gallery-8.jpg);background-position: center; background-size: cover;">
+          <div class="m-auto">
+            <img src="./img/icon/sofa.svg" alt="" width="100"><br>
+            SOFA
+          </div>
+        </a>
+        
+      </div>
+      <button type="button" class="bg-warning position-absolute border-0 display-4 text-light">+</button>
+    </div>
+    <!-- IDEA -->
+    <div class="idea w m-auto text-center">
+      <h3 class="text-dark mt-5">INTERIOR IDEAS</h3>
+      <p class="text-muted">Keeping things minimal</p>
+      <a class="d-inline-block border shadow-sm text-left m-3 p-3  " href="#" style="background-image: url(./img/images/project-1.jpg);">
+        <div class="d-flex justify-content-between">
+          <div>
+            <small class="text-white">28-Mart 2017</small>
+            <h4 class="text-white">Creating the Perfect Gallery Wall</h4>
+          </div>
+        </div>
+      </a>
+      <a class="d-inline-block border shadow-sm text-left m-3 p-3  " href="#" style="background-image: url(./img/images/project-2.jpg);;">
+        <div class="d-flex justify-content-between align-items-start">
+          <div>
+            <small class="text-white">28-Mart 2017</small>
+            <h4 class="text-white">Making the Most Out of Your Kids Old Bedroom</h4>
+          </div>
+        </div>
+      </a>
+      <a class="d-inline-block border shadow-sm text-left m-3 p-3  " href="#" style="background-image: url(./img/images/project-3.jpg);">
+        <div class="d-flex justify-content-between align-items-start">
+          <div>
+            <small class="text-white">28-Mart 2017</small>
+            <h4 class="text-white">Have a look at our new projects!</h4>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="text-center">
+    <button type="button" class="text-light btn btn-warning d-inline-block mt-5 mb-5">View all posts</button>
+    </div>
+    <!-- our -->
+    <div class="our text-center d-flex text-light">
+     <div class="m-auto">
+      <h3>OUR STORY</h3>
+      <p class="m-auto">We believe in creativity as one of the major forces of progress. With this idea, we traveled throughout Italy to find exceptional artisans and bring their unique handcrafted objects to connoisseurs everywhere.
+      </p>
+      <button class="btn btn-outline-light d-inline-block mt-5">Read full story</button>
+     </div>
+    </div>
+    <!-- Blog -->
+    <div class="blog w m-auto text-center">
+      <h3 class="text-dark mt-5">BLOG</h3>
+      <p class="text-muted mb-4">Latest news from the blog</p>
+      <a class="d-inline-block m-3 border shadow-sm text-dark" href="#">
+        <img class="w-100" src="./img/images/blog-1.jpg" alt="">
+        <div class="d-flex p-2 align-items-center">
+          <p class="mb-0 px-3 border-right">
+            <small>MAR</small><br>
+            <b>08</b><br>
+            <small>2017</small>
+          </p>
+          <h5 class="text-left px-3">The 3 Tricks that Quickly Became Rules</h5>
+        </div>
+      </a>
+      <a class="d-inline-block m-3 border shadow-sm text-dark" href="#">
+        <img class="w-100" src="./img/images/blog-2.jpg" alt="">
+        <div class="d-flex p-2 align-items-center">
+          <p class="mb-0 px-3 border-right">
+            <small>MAR</small><br>
+            <b>08</b><br>
+            <small>2017</small>
+          </p>
+          <h5 class="text-left px-3">The 3 Tricks that Quickly Became Rules</h5>
+        </div>
+      </a>
+      <a class="d-inline-block m-3 border shadow-sm text-dark" href="#">
+        <img class="w-100" src="./img/images/blog-3.jpg" alt="">
+        <div class="d-flex p-2 align-items-center">
+          <p class="mb-0 px-3 border-right">
+            <small>MAR</small><br>
+            <b>08</b><br>
+            <small>2017</small>
+          </p>
+          <h5 class="text-left px-3">The 3 Tricks that Quickly Became Rules</h5>
+        </div>
+      </a>
+    <button type="button" class="btn btn-warning  d-inline-block mt-4 mb-5 text-light">View all posts</button>
+      
+    </div>
+  </div>
+  <!-- INSTAGRAM -->
+  <div class="text-center mt-3">
+    <h3 class="text-dark mt-5">FOLLOW US <i class="fab fa-instagram display-4"></i> INSTAGRAM</h3>
+    <p class="text-muted mb-4">@InstaFurnitureFactory</p>
+    <div class="row no-gutters">
+      <div class="col-sm-6 col-md-4 col-lg-2">
+       <img class="w-100" src="./img/images/square-1.jpg" alt="">
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2">
+       <img class="w-100" src="./img/images/square-2.jpg" alt="">
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2">
+       <img class="w-100" src="./img/images/square-3.jpg" alt="">
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2">
+       <img class="w-100" src="./img/images/square-4.jpg" alt="">
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2">
+       <img class="w-100" src="./img/images/square-5.jpg" alt="">
+      </div>
+      <div class="col-sm-6 col-md-4 col-lg-2">
+       <img class="w-100" src="./img/images/square-6.jpg" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- footer -->
+  <div class="footer text-secondary bg-black">
+    <div class="container">
+      <div class="d-flex justify-content-between flex-wrap pt-5">
+        <div>
+          <h3 class="text-gold">VISIT OUR SHOWROOM</h3>
+          <p class="mb-0">200 12th Ave, New York, NY 10001, USA</p>
+          <p>Mon - Sat: 10 am - 6 pm <span class="mx-3">|</span> Sun: 12 pm - 2 pm</p>
+        </div>
+        <div class="d-flex flex-column align-items-center">
+          <button type="button" class="btn btn-outline-light">Get directions</button>
+          <h4 class="text-gold mt-3"><i class="fa fa-phone"></i> 333.278.06622</h4>
+        </div>
+      </div>
+      <hr style="border-color: #ccc;opacity: 0.3; margin-top: 40px; margin-bottom: 40px;">
+      <div class="row">
+        <div class="col-sm-2">
+          <h5 class="text-gold">BROWSE BY</h5>
+          <a class="text-secondary" href="#">Brand</a><br>
+          <a class="text-secondary" href="#">Product</a><br>
+          <a class="text-secondary" href="#">Category</a>
+        </div>
+        <div class="col-sm-2">
+          <h5 class="text-gold">RESOURCES</h5>
+          <a class="text-secondary" href="#">Design</a><br>
+          <a class="text-secondary" href="#">Projects</a><br>
+          <a class="text-secondary" href="#">Sales</a>
+        </div>
+        <div class="col-sm-2">
+          <h5 class="text-gold">OUR COMPANY</h5>
+          <a class="text-secondary" href="#">About</a><br>
+          <a class="text-secondary" href="#">News</a><br>
+          <a class="text-secondary" href="#">Contact</a>
+        </div>
+        <div class="col-md-6">
+          <h5 class="text-gold">SIGN UP FOR OUR NEWSLETTER</h5>
+          <p><i>Add your email address to sign up for our monthly emails and to receive promotional</i></p>
+          <form class="d-flex border-bottom border-warning pb-2">
+            <input class="bg-black border-0 flex-fill " type="email" placeholder="Email address">
+            <button type="button" class="btn btn-sm btn-outline-light">Subscribe</button>
+          </form>
+        </div>
+
+      </div>
+      <div class="d-flex justify-content-between flex-wrap pb-4">
+        <div class="mt-4">
+          <a class="text-secondary text-nowrap" href="#"><i class="fa fa-download"></i> Downloaded Mobel</a>
+          <span class="mx-2">|</span>
+          <a class="text-secondary text-nowrap" href="#">Sitemap</a>
+          <span class="mx-2">|</span>
+          <a class="text-secondary text-nowrap" href="#">Privacy policy</a>
+        </div>
+        <div class="mt-4">
+          <a class="text-secondary mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="text-secondary mx-2" href="#"><i class="fab fa-twitter"></i></a>
+          <a class="text-secondary mx-2" href="#"><i class="fab fa-google-plus-g"></i></a>
+          <a class="text-secondary mx-2" href="#"><i class="fab fa-youtube"></i></a>
+          <a class="text-secondary mx-2" href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Script -->
+ <script src="./bootstrap/js/jquery-3.2.1.slim.min.js"></script>
+ <script src="./bootstrap/js/popper.min.js"></script>
+ <script src="./bootstrap/js/bootstrap.min.js"></script>
+
+ <script>
+   function openMenu() {
+     let menu = document.getElementsByClassName('social')[0].style;
+     if(menu.display == 'none') menu.display = 'block';
+     else menu.display='none';
+   }
+ </script>
+</body>
+</html>
